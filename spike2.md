@@ -8,7 +8,7 @@ Documentation for the `hub` module, offering more advanced functions compared to
 - <https://lego.github.io/MINDSTORMS-Robot-Inventor-hub-API/>
 
 Some more analysis of this can be found here, although much is left unclear or missing: <https://www.antonsmindstorms.com/2021/01/14/advanced-undocumented-python-in-spike-prime-and-mindstorms-hubs/>  
-I also found this, but I don't think it adds anything substantial: <https://tuftsceeo.github.io/SPIKEPythonDocs/SPIKE2.html>
+I also found this, but I don't think it adds anything substantial: <https://tuftsceeo.github.io/SPIKEPythonDocs/SPIKE2.html> (I think this is a copy of the official LEGO documentation)
 
 All motors and sensors can be read from the device & motor API (`hub.port.X.device` & `hub.port.X.motor`) directly instead of using the `spike` functions specific to a sensor or motor, as seen here: <https://hubmodule.readthedocs.io/en/latest/sensors/>  
 This sometimes allows for more precise/faster reading of the sensors. We have seen a massive improvement of our Robot Game performance/reproducability after switching to these with our own wrappers instead of using the `spike` module.
